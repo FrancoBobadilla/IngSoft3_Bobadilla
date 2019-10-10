@@ -1,6 +1,7 @@
 node {
   def mvnHome
   stage ('preparation') {
+    git 'https://github.com/FrancoBobadilla/IngSoft3_Bobadilla'
     mvnHome = tool 'M3'
   }
   stage ('compile') {
